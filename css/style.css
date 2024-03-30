@@ -1,0 +1,293 @@
+* {
+  margin: 0px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  /* width: 1170px; */
+  margin: auto;
+  /* display: block; */
+
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+#nav-bar nav a {
+  padding: 10px 20px;
+
+  display: inline-block;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.topnav {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: url("../images/banner.jpg");
+
+  background-color: #cccccc;
+  width: 100%;
+  height: 200px;
+}
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #9704aa;
+  color: white;
+}
+
+.center {
+  border-style: solid;
+  border-color: rgb(4, 58, 9);
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+
+  align-items: center;
+  text-align: center;
+}
+
+.spanactive {
+  background: #199cdb;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.span {
+  background: lightgrey;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.img_chungchi {
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin: 20px 10px;
+}
+.nd_chungchi {
+  margin: 20px 10px;
+}
+.chungchi {
+  display: flex;
+  width: 50%;
+  margin: 20px 10px;
+}
+.img_duan {
+  width: auto;
+  height: 200px;
+}
+
+table tbody tr td {
+  padding: 15px;
+}
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
+  background-color: #f7f7f7;
+  color: rgb(17, 97, 7);
+  font-size: xx-large;
+}
+.social {
+  text-align: center;
+}
+.social li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.certificate {
+  border-bottom: 1px solid orange;
+}
+
+.certificate_border {
+  border-left: 1px solid orange;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url("../images/banner.jpg");
+
+    background-color: #cccccc;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* For mobile phones: */
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+.left {
+  width: 75%;
+  float: left;
+}
+
+.right {
+  width: 25%;
+  float: left;
+}
+
+.container {
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4 {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+.row {
+  border-left: 1px solid rgb(133, 118, 118);
+  border-right: 1px solid rgb(133, 118, 118);
+  border-bottom: 1px solid rgb(133, 118, 118);
+  border-top: 1px solid rgb(133, 118, 118);
+}
+.col-xs-4 {
+  border-left: 1px solid rgb(133, 118, 118);
+}
+.col-md-4 {
+  border-left: 1px solid rgb(133, 118, 118);
+  border-right: 1px solid rgb(133, 118, 118);
+  border-bottom: 1px solid rgb(133, 118, 118);
+  border-top: 1px solid rgb(133, 118, 118);
+}

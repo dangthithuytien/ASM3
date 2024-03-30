@@ -1,0 +1,92 @@
+@media only screen and (min-width: 768px) {
+  .in4 {
+    display: none;
+  }
+  body {
+    background-color: aquamarine;
+  }
+  .container {
+    display: block;
+    flex-wrap: wrap;
+  }
+  #project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px; /* Khoảng cách giữa các cột */
+  }
+  #job-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  /* Sử dụng flexbox để chia cột thành hai cột */
+
+  .col-xs-4 {
+    flex: 0 0 50%; /* Mỗi cột chiếm 50% chiều rộng */
+    max-width: 50%;
+  }
+
+  /* #job-info .col-xs-4 {
+    width: 50%;
+  } */
+  /* CSS cho hình ảnh chứng chỉ */
+  .certificate {
+    width: 100%; /* Đảm bảo rằng phần chứa hình ảnh giữ nguyên layout trên mọi kích thước màn hình */
+    max-width: 100%; /* Phần chứa hình ảnh không vượt quá kích thước của màn hình */
+    padding-left: 15px; /* Đảm bảo rằng khoảng cách bên trái và bên phải vẫn giữ nguyên */
+    padding-right: 15px; /* Đảm bảo rằng khoảng cách bên trái và bên phải vẫn giữ nguyên */
+    margin-left: auto; /* Canh lề trái tự động */
+    margin-right: auto; /* Canh lề phải tự động */
+  }
+
+  /* CSS cho hình ảnh */
+  .certificate img {
+    max-width: 100%; /* Hình ảnh sẽ không vượt quá kích thước của phần chứa */
+    height: auto; /* Đảm bảo tỷ lệ khung hình khi thay đổi kích thước */
+  }
+  /* CSS cho phần "Chứng chỉ - Giải thưởng" */
+  #certificate {
+    width: 100%; /* Đảm bảo rằng phần chứa giữ nguyên layout trên mọi kích thước màn hình */
+    max-width: 100%; /* Phần chứa không vượt quá kích thước của màn hình */
+    padding-left: 15px; /* Đảm bảo rằng khoảng cách bên trái và bên phải vẫn giữ nguyên */
+    padding-right: 15px; /* Đảm bảo rằng khoảng cách bên trái và bên phải vẫn giữ nguyên */
+    margin-left: auto; /* Canh lề trái tự động */
+    margin-right: auto; /* Canh lề phải tự động */
+  }
+
+  /* CSS cho mỗi phần chứng chỉ */
+  #certificate .col-md-4 {
+    width: 100%; /* Đảm bảo rằng mỗi phần chứa giữ nguyên layout trên mọi kích thước màn hình */
+    max-width: 100%; /* Phần chứa không vượt quá kích thước của màn hình */
+    padding-bottom: 20px; /* Tạo khoảng cách dưới giữa các phần chứng chỉ */
+    text-align: center; /* Căn giữa nội dung của mỗi phần chứng chỉ */
+  }
+
+  /* CSS cho hình ảnh chứng chỉ */
+  #certificate .img_chungchi {
+    max-width: 100%; /* Hình ảnh sẽ không vượt quá kích thước của phần chứa */
+    height: auto; /* Đảm bảo tỷ lệ khung hình khi thay đổi kích thước */
+  }
+  #project .container {
+    display: flex;
+  }
+
+  #project .col {
+    flex: 1;
+    margin: 0 10px;
+  }
+  #projects.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project {
+    flex: 0 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+
+  .project {
+    flex: 0 1 100%;
+  }
+}
